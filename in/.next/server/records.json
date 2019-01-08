@@ -1,0 +1,81 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "external \"react\"": 0,
+      "external \"@material-ui/core/styles\"": 1,
+      "external \"next/head\"": 2,
+      "external \"@material-ui/core/Typography\"": 3,
+      "external \"next/document\"": 4,
+      "external \"prop-types\"": 5,
+      "external \"@material-ui/core/SvgIcon\"": 6,
+      "external \"@material-ui/core/colors/purple\"": 7,
+      "external \"@material-ui/core/colors/green\"": 8,
+      "external \"next/link\"": 9,
+      "external \"next/app\"": 10,
+      "external \"@material-ui/core/CssBaseline\"": 11,
+      "external \"react-jss/lib/JssProvider\"": 12,
+      "external \"jss\"": 13,
+      "external \"styled-jsx/server\"": 14,
+      "external \"styled-jsx/style\"": 15,
+      "external \"@material-ui/core/Grid\"": 16,
+      "external \"@material-ui/core/Button\"": 17,
+      "external \"@material-ui/core/AppBar\"": 18,
+      "external \"@material-ui/core/Toolbar\"": 19,
+      "multi ./pages/_app.js": 20,
+      "multi ./pages/_document.js": 21,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/_document.js": 22,
+      "multi ./pages/index.js": 23,
+      "multi node_modules/next/dist/pages/_error.js": 24,
+      "node_modules/next/dist/pages/_error.js": 25,
+      "external \"next/error\"": 26,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/index.js be749019a58504fe9b8a01bea9e2e3ac": 27,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/_app.js 09d1e1d4953cc11928f8a7edaf4014ba": 28
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16,
+      "17": 17,
+      "18": 18,
+      "19": 19,
+      "20": 20,
+      "21": 21,
+      "22": 22,
+      "23": 23,
+      "24": 24,
+      "25": 25,
+      "26": 26,
+      "27": 27,
+      "28": 28
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static/PgrUJuIXby8nIFabmMUZC/pages/_app.js": 0,
+      "static/PgrUJuIXby8nIFabmMUZC/pages/_document.js": 1,
+      "static/PgrUJuIXby8nIFabmMUZC/pages/index.js": 2,
+      "static/PgrUJuIXby8nIFabmMUZC/pages/_error.js": 3
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3
+    ]
+  }
+}
