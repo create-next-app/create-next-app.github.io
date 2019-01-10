@@ -15,18 +15,7 @@ import Nav from '../components/nav';
 const styles = theme => ({
   root: {
     textAlign: 'center',
-    paddingTop: theme.spacing.unit * 20,
-  },
-  row: {
-    marginTop: 60
-  },
-  papper: {
-    paddingLeft: 20,
-    paddingTop: 2,
-    paddingBottom: 5
-  },
-  description: {
-    marginTop: 25
+    paddingTop: theme.spacing.unit * 15,
   },
   button: {
     margin: theme.spacing.unit,
@@ -42,7 +31,11 @@ class Index extends React.Component {
 
     return (
       <div>
-        <Head title="Create Next App CLI" />
+        <Head
+          title="Create Next App"
+          description="Command line interface (CLI) for easily creating Next.js apps in one command."
+          keywords="next, nextjs, react, reactjs, create-next-app, create-next-app-cli, create-react-app, server-side-rendering, zero-configuration, build-tools, boilerplate"
+        />
         <Nav />
         <div className={classes.root}>
           <div>
@@ -60,22 +53,183 @@ class Index extends React.Component {
               Github
             </Button>
           </div>
-          <Grid container spacing={24} className={classes.row} alignItems="center">
+        </div>
+        <div style={{ display: 'flex', margin: 40 }}>
+          <Grid container spacing={24} direction="column">
+            <Grid container item spacing={0} justify="center">
+              <Grid item xs={6}>
+                <Typography variant="h4" gutterBottom>
+                  Installation
+                </Typography>
+                <hr/>
+              </Grid>
+            </Grid>
+            <Grid container item spacing={0} justify="center" >
+              <Grid item xs={6}>
+                <Typography variant="body1" gutterBottom>
+                  create-next-app-cli is available on npm:
+                </Typography>
+                <pre>
+                  <code className="language-javascript">
+                  {`npm install --global create-next-app-cli`}
+                  </code>
+                </pre>
+                <Typography variant="body1" gutterBottom>
+                  create-next-app-cli is available on npm:
+                </Typography>
+                <pre>
+                  <code className="language-javascript">
+                  {`yarn add create-next-app-cli`}
+                  </code>
+                </pre>
+                <Typography variant="body1" gutterBottom>
+                  You don't need to install or setup Webpack or Babel. They come with Next.js, so you can just start coding after running <code>create-next-app</code>.
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid container item spacing={0} justify="center">
+              <Grid item xs={6}>
+                <Typography variant="h4" gutterBottom>
+                  Creating an App
+                </Typography>
+                <hr/>
+              </Grid>
+            </Grid>
+            <Grid container item spacing={0} justify="center" >
+              <Grid item xs={6}>
+                <Typography variant="body1" gutterBottom>
+                  Create a new Next.js app with `default` and `material` UI:
+                </Typography>
+                <pre>
+                  <code className="language-javascript">
+                  {`create-next-app my-app --template default`}
+                  </code>
+                </pre>
+                <Typography variant="body1" gutterBottom>
+                  It will create a directory called my-app inside the current folder. Inside that directory, it will generate the initial project structure and install the transitive dependencies:
+                </Typography>
+                <pre>
+                  <code className="language-javascript">
+{`.
+├── README.md
+├── components
+│   ├── head.js
+│   └── nav.js
+├── next.config.js
+├── node_modules
+│   ├── [...]
+├── package.json
+├── pages
+│   └── index.js
+├── static
+│   └── favicon.ico
+└── yarn.lock`}
+                  </code>
+                </pre>
+                <Typography variant="body1" gutterBottom>
+                  No configuration or complicated folder structures, just the files you need to build your app. Once the installation is done, you can open your project folder:
+                </Typography>
+                <pre>
+                  <code className="language-javascript">
+                  {`cd my-app`}
+                  </code>
+                </pre>
+                <Typography variant="body1" gutterBottom>
+                  Inside the newly created project, you can run some built-in commands:
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid container item spacing={0} justify="center" >
+              <Grid item xs={6}>
+                <Typography variant="h5" gutterBottom className="section">
+                  <code>npm run dev</code> or <code>yarn dev</code>
+                </Typography>
+                <Typography variant="body1" gutterBottom className="section">
+                  Runs the app in development mode.<br />
+                  Open <code>http://localhost:3000</code> to view it in the browser.
+                </Typography>
+                <Typography variant="body1" gutterBottom className="section">
+                  The page will automatically reload if you make changes to the code.<br/>
+                  You will see the build errors and lint warnings in the console.
+                </Typography>
+                <Typography variant="body1" gutterBottom className="section">
+                  Out of the box, we get:
+                  <ul>
+                    <li>Automatic transpilation and bundling (with webpack and babel)</li>
+                    <li>Hot code reloading</li>
+                    <li>Server rendering and indexing of <code>./pages</code></li>
+                    <li>Static file serving. <code>./static/</code> is mapped to <code>/static/</code></li>
+                  </ul>
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid container item spacing={0} justify="center">
+              <Grid item xs={6}>
+                <Typography variant="h5" gutterBottom className="section">
+                  <code>npm run build</code> or <code>yarn build</code>
+                </Typography>
+                <Typography variant="body1" gutterBottom className="section">
+                  Builds the app for production to the .next folder.<br/>
+                  It correctly bundles React in production mode and optimizes the build for the best performance.
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid container item spacing={0} justify="center">
+              <Grid item xs={6}>
+                <Typography variant="h5" gutterBottom className="section">
+                  <code>npm run start</code> or <code>yarn start</code>
+                </Typography>
+                <Typography variant="body1" gutterBottom className="section">
+                  Starts the application in production mode. The application should be compiled with <code>npm run build</code> first.
+                </Typography>
+                <Typography variant="body1" gutterBottom className="section">
+                  Now you maybe ready to code and deploy your app!
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid container item spacing={0} justify="center">
+              <Grid item xs={6}>
+                <Typography variant="h4" gutterBottom>
+                  Starting Next.js Examples
+                </Typography>
+                <hr/>
+              </Grid>
+            </Grid>
+            <Grid container item spacing={0} justify="center">
+              <Grid item xs={6}>
+                <Typography variant="body1" gutterBottom>
+                  There are a bunch of examples in the <a href="https://github.com/zeit/next.js/tree/canary/examples" target="_blank">Next.js repository</a> (and growing) that you can use to bootstrap your app.
+                </Typography>
+                <Typography variant="body1" gutterBottom>
+                  Run command below to use an example:
+                </Typography>
+                <pre>
+                  <code className="language-javascript">
+                    {`create-next-app example-app-name --example basic-csss`}
+                  </code>
+                </pre>
+              </Grid>
+            </Grid>
+            <Grid container item spacing={0} justify="center">
+              <Grid item xs={6}>
+                <Typography variant="h4" gutterBottom>
+                  User Guide
+                </Typography>
+                <hr/>
+              </Grid>
+            </Grid>
+            <Grid container item spacing={0} justify="center">
+              <Grid item xs={6}>
+                <Typography variant="body1" gutterBottom>
+                  You can find detailed instructions on using Next.js and many tips in <a href="https://nextjs.org/docs/" target="_blank">its documentation</a>.
+                </Typography>
+              </Grid>
+            </Grid>
           </Grid>
         </div>
-        <style jsx>{`
-          .card p {
-            text-decoration: none !important;
-            margin: 0;
-            padding: 12px 0 0;
-            font-size: 13px;
-            color: #333;
-          }
-          a {
-            color: #067df7;
-            text-decoration: none
-          }
-        `}</style>
+        <footer>
+          <div>© 2019 Copyright</div>
+        </footer>
       </div>
     );
   }

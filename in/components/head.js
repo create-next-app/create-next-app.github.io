@@ -2,6 +2,7 @@ import NextHead from 'next/head'
 import { string } from 'prop-types'
 
 const defaultDescription = ''
+const defaultKeywords = ''
 const defaultOGURL = ''
 const defaultOGImage = ''
 
@@ -9,7 +10,10 @@ const Head = (props) => (
   <NextHead>
     <meta charSet="UTF-8" />
     <title>{props.title || ''}</title>
+    <link href="../static/prism.css" rel="stylesheet" />
+    <script src="../static/prism.js"></script>
     <meta name="description" content={props.description || defaultDescription} />
+    <meta name="keywords" content={props.keywords || defaultKeywords} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="192x192" href="/static/touch-icon.png" />
     <link rel="apple-touch-icon" href="/static/touch-icon.png" />
