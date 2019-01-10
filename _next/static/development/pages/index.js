@@ -20,6 +20,7 @@ var _jsxFileName = "/home/bunlong/workspace/os/Bunlong/create-next-app.github.io
 
 
 var defaultDescription = '';
+var defaultKeywords = '';
 var defaultOGURL = '';
 var defaultOGImage = '';
 
@@ -27,35 +28,35 @@ var Head = function Head(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
     charSet: "UTF-8",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, props.title || ''), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-    href: "../static/prism.css",
-    rel: "stylesheet",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-    src: "../static/prism.js",
+  }, props.title || ''), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+    href: "/static/prism.css",
+    rel: "stylesheet",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
+    src: "/static/prism.js",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -63,7 +64,15 @@ var Head = function Head(props) {
     content: props.description || defaultDescription,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "keywords",
+    content: props.keywords || defaultKeywords,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -71,7 +80,7 @@ var Head = function Head(props) {
     content: "width=device-width, initial-scale=1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 17
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -80,7 +89,7 @@ var Head = function Head(props) {
     href: "/static/touch-icon.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 18
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -88,7 +97,7 @@ var Head = function Head(props) {
     href: "/static/touch-icon.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 19
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -97,7 +106,7 @@ var Head = function Head(props) {
     color: "#49B882",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 20
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -105,7 +114,7 @@ var Head = function Head(props) {
     href: "/static/favicon.ico",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 21
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -113,7 +122,7 @@ var Head = function Head(props) {
     content: props.url || defaultOGURL,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 22
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -121,7 +130,7 @@ var Head = function Head(props) {
     content: props.title || '',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 23
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -129,7 +138,7 @@ var Head = function Head(props) {
     content: props.description || defaultDescription,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 24
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -137,7 +146,7 @@ var Head = function Head(props) {
     content: props.url || defaultOGURL,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 25
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -145,7 +154,7 @@ var Head = function Head(props) {
     content: "summary_large_image",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 26
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -153,7 +162,7 @@ var Head = function Head(props) {
     content: props.ogImage || defaultOGImage,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 27
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -161,7 +170,7 @@ var Head = function Head(props) {
     content: props.ogImage || defaultOGImage,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 28
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -169,7 +178,7 @@ var Head = function Head(props) {
     content: "1200",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 29
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -177,7 +186,7 @@ var Head = function Head(props) {
     content: "630",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 30
     },
     __self: this
   }));
@@ -21918,12 +21927,12 @@ module.exports = _typeof;
 
 /***/ "./node_modules/next/node_modules/prop-types/checkPropTypes.js":
 /*!***************************************************************************************************************************!*\
-  !*** delegated ./node_modules/next/node_modules/prop-types/checkPropTypes.js from dll-reference dll_669f0732a7e04673e1dc ***!
+  !*** delegated ./node_modules/next/node_modules/prop-types/checkPropTypes.js from dll-reference dll_b990aebf1c9bba9f81d3 ***!
   \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_669f0732a7e04673e1dc */ "dll-reference dll_669f0732a7e04673e1dc"))("./node_modules/next/node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_b990aebf1c9bba9f81d3 */ "dll-reference dll_b990aebf1c9bba9f81d3"))("./node_modules/next/node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -22531,12 +22540,12 @@ if (true) {
 
 /***/ "./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*************************************************************************************************************************************!*\
-  !*** delegated ./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_669f0732a7e04673e1dc ***!
+  !*** delegated ./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_b990aebf1c9bba9f81d3 ***!
   \*************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_669f0732a7e04673e1dc */ "dll-reference dll_669f0732a7e04673e1dc"))("./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_b990aebf1c9bba9f81d3 */ "dll-reference dll_b990aebf1c9bba9f81d3"))("./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -23073,12 +23082,12 @@ module.exports = (__webpack_require__(/*! dll-reference dll_669f0732a7e04673e1dc
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_669f0732a7e04673e1dc ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_b990aebf1c9bba9f81d3 ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_669f0732a7e04673e1dc */ "dll-reference dll_669f0732a7e04673e1dc"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_b990aebf1c9bba9f81d3 */ "dll-reference dll_b990aebf1c9bba9f81d3"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -23735,12 +23744,12 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 
 /***/ "./node_modules/react-dom/index.js":
 /*!***********************************************************************************************!*\
-  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_669f0732a7e04673e1dc ***!
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_b990aebf1c9bba9f81d3 ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_669f0732a7e04673e1dc */ "dll-reference dll_669f0732a7e04673e1dc"))("./node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_b990aebf1c9bba9f81d3 */ "dll-reference dll_b990aebf1c9bba9f81d3"))("./node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -25221,12 +25230,12 @@ exports.classNamesShape = classNamesShape;
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_669f0732a7e04673e1dc ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_b990aebf1c9bba9f81d3 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_669f0732a7e04673e1dc */ "dll-reference dll_669f0732a7e04673e1dc"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_b990aebf1c9bba9f81d3 */ "dll-reference dll_b990aebf1c9bba9f81d3"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -26919,12 +26928,12 @@ module.exports = warning;
 
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!******************************************************************************************************!*\
-  !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_669f0732a7e04673e1dc ***!
+  !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_b990aebf1c9bba9f81d3 ***!
   \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_669f0732a7e04673e1dc */ "dll-reference dll_669f0732a7e04673e1dc"))("./node_modules/webpack/buildin/global.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_b990aebf1c9bba9f81d3 */ "dll-reference dll_b990aebf1c9bba9f81d3"))("./node_modules/webpack/buildin/global.js");
 
 /***/ }),
 
@@ -27093,6 +27102,8 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_head__WEBPACK_IMPORTED_MODULE_8__["default"], {
         title: "Create Next App",
+        description: "Command line interface (CLI) for easily creating Next.js apps in one command.",
+        keywords: "next, nextjs, react, reactjs, create-next-app, create-next-app-cli, create-react-app, server-side-rendering, zero-configuration, build-tools, boilerplate",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 34
@@ -27101,20 +27112,20 @@ function (_React$Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_nav__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 39
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classes.root,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 40
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 41
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27122,7 +27133,7 @@ function (_React$Component) {
         gutterBottom: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 42
         },
         __self: this
       }, "Create Next App"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27130,7 +27141,7 @@ function (_React$Component) {
         gutterBottom: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 45
         },
         __self: this
       }, "Create Next.js App building tools"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -27140,7 +27151,7 @@ function (_React$Component) {
         className: classes.button,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 48
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_SvgIcon__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -27149,14 +27160,14 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 49
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
         d: "M12.007 0C6.12 0 1.1 4.27.157 10.08c-.944 5.813 2.468 11.45 8.054 13.312.19.064.397.033.555-.084.16-.117.25-.304.244-.5v-2.042c-3.33.735-4.037-1.56-4.037-1.56-.22-.726-.694-1.35-1.334-1.756-1.096-.75.074-.735.074-.735.773.103 1.454.557 1.846 1.23.694 1.21 2.23 1.638 3.45.96.056-.61.327-1.178.766-1.605-2.67-.3-5.462-1.335-5.462-6.002-.02-1.193.42-2.35 1.23-3.226-.327-1.015-.27-2.116.166-3.09 0 0 1.006-.33 3.3 1.23 1.966-.538 4.04-.538 6.003 0 2.295-1.5 3.3-1.23 3.3-1.23.445 1.006.49 2.144.12 3.18.81.877 1.25 2.033 1.23 3.226 0 4.607-2.805 5.627-5.476 5.927.578.583.88 1.386.825 2.206v3.29c-.005.2.092.393.26.507.164.115.377.14.565.063 5.568-1.88 8.956-7.514 8.007-13.313C22.892 4.267 17.884.007 12.008 0z",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 50
         },
         __self: this
       })), "\xA0 Github"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -27166,7 +27177,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 57
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27175,7 +27186,7 @@ function (_React$Component) {
         direction: "column",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 58
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27185,7 +27196,7 @@ function (_React$Component) {
         justify: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 59
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27193,7 +27204,7 @@ function (_React$Component) {
         xs: 6,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 60
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27201,13 +27212,13 @@ function (_React$Component) {
         gutterBottom: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 61
         },
         __self: this
       }, "Installation"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 64
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27217,7 +27228,7 @@ function (_React$Component) {
         justify: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 67
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27225,7 +27236,7 @@ function (_React$Component) {
         xs: 6,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 68
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27233,20 +27244,20 @@ function (_React$Component) {
         gutterBottom: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 69
         },
         __self: this
       }, "create-next-app-cli is available on npm:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 72
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         className: "language-javascript",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 73
         },
         __self: this
       }, "npm install --global create-next-app-cli")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27254,20 +27265,20 @@ function (_React$Component) {
         gutterBottom: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 77
         },
         __self: this
       }, "create-next-app-cli is available on npm:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 80
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         className: "language-javascript",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 81
         },
         __self: this
       }, "yarn add create-next-app-cli")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27275,13 +27286,13 @@ function (_React$Component) {
         gutterBottom: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 85
         },
         __self: this
       }, "You don't need to install or setup Webpack or Babel. They come with Next.js, so you can just start coding after running ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 86
         },
         __self: this
       }, "create-next-app"), "."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27291,7 +27302,7 @@ function (_React$Component) {
         justify: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 90
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27299,7 +27310,7 @@ function (_React$Component) {
         xs: 6,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 91
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27307,13 +27318,13 @@ function (_React$Component) {
         gutterBottom: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 92
         },
         __self: this
       }, "Creating an App"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 95
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27323,7 +27334,7 @@ function (_React$Component) {
         justify: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 98
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27331,7 +27342,7 @@ function (_React$Component) {
         xs: 6,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 99
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27339,20 +27350,20 @@ function (_React$Component) {
         gutterBottom: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 100
         },
         __self: this
       }, "Create a new Next.js app with `default` and `material` UI:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 103
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         className: "language-javascript",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 104
         },
         __self: this
       }, "create-next-app my-app --template default")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27360,20 +27371,20 @@ function (_React$Component) {
         gutterBottom: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104
+          lineNumber: 108
         },
         __self: this
       }, "It will create a directory called my-app inside the current folder. Inside that directory, it will generate the initial project structure and install the transitive dependencies:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107
+          lineNumber: 111
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         className: "language-javascript",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 108
+          lineNumber: 112
         },
         __self: this
       }, ".\n\u251C\u2500\u2500 README.md\n\u251C\u2500\u2500 components\n\u2502   \u251C\u2500\u2500 head.js\n\u2502   \u2514\u2500\u2500 nav.js\n\u251C\u2500\u2500 next.config.js\n\u251C\u2500\u2500 node_modules\n\u2502   \u251C\u2500\u2500 [...]\n\u251C\u2500\u2500 package.json\n\u251C\u2500\u2500 pages\n\u2502   \u2514\u2500\u2500 index.js\n\u251C\u2500\u2500 static\n\u2502   \u2514\u2500\u2500 favicon.ico\n\u2514\u2500\u2500 yarn.lock")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27381,20 +27392,20 @@ function (_React$Component) {
         gutterBottom: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 125
+          lineNumber: 129
         },
         __self: this
       }, "No configuration or complicated folder structures, just the files you need to build your app. Once the installation is done, you can open your project folder:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 132
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         className: "language-javascript",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129
+          lineNumber: 133
         },
         __self: this
       }, "cd my-app")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27402,7 +27413,7 @@ function (_React$Component) {
         gutterBottom: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 133
+          lineNumber: 137
         },
         __self: this
       }, "Inside the newly created project, you can run some built-in commands:"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27412,7 +27423,7 @@ function (_React$Component) {
         justify: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 138
+          lineNumber: 142
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27420,7 +27431,7 @@ function (_React$Component) {
         xs: 6,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 139
+          lineNumber: 143
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27429,19 +27440,19 @@ function (_React$Component) {
         className: "section",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 140
+          lineNumber: 144
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 141
+          lineNumber: 145
         },
         __self: this
       }, "npm run dev"), " or ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 141
+          lineNumber: 145
         },
         __self: this
       }, "yarn dev")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27450,19 +27461,19 @@ function (_React$Component) {
         className: "section",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 143
+          lineNumber: 147
         },
         __self: this
       }, "Runs the app in development mode.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 144
+          lineNumber: 148
         },
         __self: this
       }), "Open ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 145
+          lineNumber: 149
         },
         __self: this
       }, "http://localhost:3000"), " to view it in the browser."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27471,13 +27482,13 @@ function (_React$Component) {
         className: "section",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 147
+          lineNumber: 151
         },
         __self: this
       }, "The page will automatically reload if you make changes to the code.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 148
+          lineNumber: 152
         },
         __self: this
       }), "You will see the build errors and lint warnings in the console."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27486,55 +27497,55 @@ function (_React$Component) {
         className: "section",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 151
+          lineNumber: 155
         },
         __self: this
       }, "Out of the box, we get:", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 153
+          lineNumber: 157
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 154
+          lineNumber: 158
         },
         __self: this
       }, "Automatic transpilation and bundling (with webpack and babel)"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 155
+          lineNumber: 159
         },
         __self: this
       }, "Hot code reloading"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 156
+          lineNumber: 160
         },
         __self: this
       }, "Server rendering and indexing of ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 156
+          lineNumber: 160
         },
         __self: this
       }, "./pages")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 157
+          lineNumber: 161
         },
         __self: this
       }, "Static file serving. ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 157
+          lineNumber: 161
         },
         __self: this
       }, "./static/"), " is mapped to ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 157
+          lineNumber: 161
         },
         __self: this
       }, "/static/")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27544,7 +27555,7 @@ function (_React$Component) {
         justify: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 162
+          lineNumber: 166
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27552,7 +27563,7 @@ function (_React$Component) {
         xs: 6,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 163
+          lineNumber: 167
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27561,19 +27572,19 @@ function (_React$Component) {
         className: "section",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 164
+          lineNumber: 168
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 165
+          lineNumber: 169
         },
         __self: this
       }, "npm run build"), " or ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 165
+          lineNumber: 169
         },
         __self: this
       }, "yarn build")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27582,13 +27593,13 @@ function (_React$Component) {
         className: "section",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 167
+          lineNumber: 171
         },
         __self: this
       }, "Builds the app for production to the .next folder.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 168
+          lineNumber: 172
         },
         __self: this
       }), "It correctly bundles React in production mode and optimizes the build for the best performance."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27598,7 +27609,7 @@ function (_React$Component) {
         justify: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 173
+          lineNumber: 177
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27606,7 +27617,7 @@ function (_React$Component) {
         xs: 6,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 174
+          lineNumber: 178
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27615,19 +27626,19 @@ function (_React$Component) {
         className: "section",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 175
+          lineNumber: 179
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 176
+          lineNumber: 180
         },
         __self: this
       }, "npm run start"), " or ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 176
+          lineNumber: 180
         },
         __self: this
       }, "yarn start")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27636,13 +27647,13 @@ function (_React$Component) {
         className: "section",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 178
+          lineNumber: 182
         },
         __self: this
       }, "Starts the application in production mode. The application should be compiled with ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 179
+          lineNumber: 183
         },
         __self: this
       }, "npm run build"), " first."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27651,7 +27662,7 @@ function (_React$Component) {
         className: "section",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 181
+          lineNumber: 185
         },
         __self: this
       }, "Now you maybe ready to code and deploy your app!"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27661,7 +27672,7 @@ function (_React$Component) {
         justify: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 186
+          lineNumber: 190
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27669,7 +27680,7 @@ function (_React$Component) {
         xs: 6,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 187
+          lineNumber: 191
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27677,13 +27688,13 @@ function (_React$Component) {
         gutterBottom: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 188
+          lineNumber: 192
         },
         __self: this
       }, "Starting Next.js Examples"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 191
+          lineNumber: 195
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27693,7 +27704,7 @@ function (_React$Component) {
         justify: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 194
+          lineNumber: 198
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27701,7 +27712,7 @@ function (_React$Component) {
         xs: 6,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 195
+          lineNumber: 199
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27709,7 +27720,7 @@ function (_React$Component) {
         gutterBottom: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 196
+          lineNumber: 200
         },
         __self: this
       }, "There are a bunch of examples in the ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -27717,7 +27728,7 @@ function (_React$Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 197
+          lineNumber: 201
         },
         __self: this
       }, "Next.js repository"), " (and growing) that you can use to bootstrap your app."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27725,20 +27736,20 @@ function (_React$Component) {
         gutterBottom: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 199
+          lineNumber: 203
         },
         __self: this
       }, "Run command below to use an example:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 202
+          lineNumber: 206
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         className: "language-javascript",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 203
+          lineNumber: 207
         },
         __self: this
       }, "create-next-app example-app-name --example basic-csss")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27748,7 +27759,7 @@ function (_React$Component) {
         justify: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 209
+          lineNumber: 213
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27756,7 +27767,7 @@ function (_React$Component) {
         xs: 6,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 210
+          lineNumber: 214
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27764,13 +27775,13 @@ function (_React$Component) {
         gutterBottom: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 211
+          lineNumber: 215
         },
         __self: this
       }, "User Guide"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 214
+          lineNumber: 218
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27780,7 +27791,7 @@ function (_React$Component) {
         justify: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 217
+          lineNumber: 221
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -27788,7 +27799,7 @@ function (_React$Component) {
         xs: 6,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 218
+          lineNumber: 222
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -27796,7 +27807,7 @@ function (_React$Component) {
         gutterBottom: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 219
+          lineNumber: 223
         },
         __self: this
       }, "You can find detailed instructions on using Next.js and many tips in ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -27804,19 +27815,19 @@ function (_React$Component) {
         target: "_blank",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 220
+          lineNumber: 224
         },
         __self: this
       }, "its documentation"), "."))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 226
+          lineNumber: 230
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 227
+          lineNumber: 231
         },
         __self: this
       }, "\xA9 2019 Copyright")));
@@ -27866,14 +27877,14 @@ return { page: module.exports.default }});
 
 /***/ }),
 
-/***/ "dll-reference dll_669f0732a7e04673e1dc":
+/***/ "dll-reference dll_b990aebf1c9bba9f81d3":
 /*!*******************************************!*\
-  !*** external "dll_669f0732a7e04673e1dc" ***!
+  !*** external "dll_b990aebf1c9bba9f81d3" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_669f0732a7e04673e1dc;
+module.exports = dll_b990aebf1c9bba9f81d3;
 
 /***/ })
 

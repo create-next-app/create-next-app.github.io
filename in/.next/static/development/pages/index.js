@@ -45,7 +45,7 @@ var Head = function Head(props) {
     },
     __self: this
   }, props.title || ''), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-    href: "../static/prism.css",
+    href: "/static/prism.css",
     rel: "stylesheet",
     __source: {
       fileName: _jsxFileName,
@@ -53,7 +53,7 @@ var Head = function Head(props) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-    src: "../static/prism.js",
+    src: "/static/prism.js",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
