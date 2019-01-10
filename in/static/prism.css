@@ -254,3 +254,9 @@ footer {
   color: grey;
   text-align: center;
 }
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  margin-bottom: 10px;
+}

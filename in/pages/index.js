@@ -75,7 +75,7 @@ class Index extends React.Component {
                   </code>
                 </pre>
                 <Typography variant="body1" gutterBottom>
-                  create-next-app-cli is available on npm:
+                  create-next-app-cli is available on yarn as well:
                 </Typography>
                 <pre>
                   <code className="language-javascript">
@@ -155,10 +155,10 @@ class Index extends React.Component {
                 <Typography variant="body1" gutterBottom className="section">
                   Out of the box, we get:
                   <ul>
-                    <li>Automatic transpilation and bundling (with webpack and babel)</li>
-                    <li>Hot code reloading</li>
-                    <li>Server rendering and indexing of <code>./pages</code></li>
-                    <li>Static file serving. <code>./static/</code> is mapped to <code>/static/</code></li>
+                    <li><Typography variant="body1" gutterBottom>Automatic transpilation and bundling (with webpack and babel)</Typography></li>
+                    <li><Typography variant="body1" gutterBottom>Hot code reloading</Typography></li>
+                    <li><Typography variant="body1" gutterBottom>Server rendering and indexing of <code>./pages</code></Typography></li>
+                    <li><Typography variant="body1" gutterBottom>Static file serving. <code>./static/</code> is mapped to <code>/static/</code></Typography></li>
                   </ul>
                 </Typography>
               </Grid>

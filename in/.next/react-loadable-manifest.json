@@ -23,7 +23,7 @@
       "publicPath": "static/chunks/commons.85a1091690a7f5c44fb2.js"
     }
   ],
-  "../../modules/_core": [
+  "../modules/_core": [
     {
       "id": 4,
       "name": "./node_modules/core-js/library/modules/_core.js",
@@ -371,13 +371,15 @@
       "publicPath": "static/chunks/commons.85a1091690a7f5c44fb2.js"
     }
   ],
-  "./rules/StyleRule": [
+  "../rules/StyleRule": [
     {
       "id": 50,
       "name": "./node_modules/jss/lib/rules/StyleRule.js",
       "file": "static/chunks/commons.85a1091690a7f5c44fb2.js",
       "publicPath": "static/chunks/commons.85a1091690a7f5c44fb2.js"
-    },
+    }
+  ],
+  "./rules/StyleRule": [
     {
       "id": 52,
       "name": "./node_modules/@material-ui/core/node_modules/jss/lib/rules/StyleRule.js",
@@ -549,12 +551,6 @@
       "name": "./node_modules/@babel/runtime-corejs2/helpers/typeof.js",
       "file": "static/chunks/commons.85a1091690a7f5c44fb2.js",
       "publicPath": "static/chunks/commons.85a1091690a7f5c44fb2.js"
-    },
-    {
-      "id": 82,
-      "name": "./node_modules/next/node_modules/@babel/runtime/helpers/typeof.js",
-      "file": "static/chunks/commons.85a1091690a7f5c44fb2.js",
-      "publicPath": "static/chunks/commons.85a1091690a7f5c44fb2.js"
     }
   ],
   "@babel/runtime-corejs2/core-js/set": [
@@ -605,6 +601,14 @@
     {
       "id": 81,
       "name": "./node_modules/deepmerge/dist/umd.js",
+      "file": "static/chunks/commons.85a1091690a7f5c44fb2.js",
+      "publicPath": "static/chunks/commons.85a1091690a7f5c44fb2.js"
+    }
+  ],
+  "@babel/runtime/helpers/typeof": [
+    {
+      "id": 82,
+      "name": "./node_modules/next/node_modules/@babel/runtime/helpers/typeof.js",
       "file": "static/chunks/commons.85a1091690a7f5c44fb2.js",
       "publicPath": "static/chunks/commons.85a1091690a7f5c44fb2.js"
     }
@@ -1175,16 +1179,10 @@
       "publicPath": "static/chunks/commons.85a1091690a7f5c44fb2.js"
     }
   ],
-  "../utils/isObservable": [
+  "./isObservable": [
     {
       "id": 167,
       "name": "./node_modules/jss/lib/utils/isObservable.js",
-      "file": "static/chunks/commons.85a1091690a7f5c44fb2.js",
-      "publicPath": "static/chunks/commons.85a1091690a7f5c44fb2.js"
-    },
-    {
-      "id": 190,
-      "name": "./node_modules/@material-ui/core/node_modules/jss/lib/utils/isObservable.js",
       "file": "static/chunks/commons.85a1091690a7f5c44fb2.js",
       "publicPath": "static/chunks/commons.85a1091690a7f5c44fb2.js"
     }
@@ -1273,7 +1271,7 @@
       "publicPath": "static/chunks/commons.85a1091690a7f5c44fb2.js"
     }
   ],
-  "../styles/createBreakpoints": [
+  "./createBreakpoints": [
     {
       "id": 179,
       "name": "./node_modules/@material-ui/core/styles/createBreakpoints.js",
@@ -1355,6 +1353,14 @@
     {
       "id": 286,
       "name": "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
+      "file": "static/chunks/commons.85a1091690a7f5c44fb2.js",
+      "publicPath": "static/chunks/commons.85a1091690a7f5c44fb2.js"
+    }
+  ],
+  "../utils/isObservable": [
+    {
+      "id": 190,
+      "name": "./node_modules/@material-ui/core/node_modules/jss/lib/utils/isObservable.js",
       "file": "static/chunks/commons.85a1091690a7f5c44fb2.js",
       "publicPath": "static/chunks/commons.85a1091690a7f5c44fb2.js"
     }
