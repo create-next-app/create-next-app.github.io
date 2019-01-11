@@ -27201,7 +27201,9 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
         item: true,
-        xs: 6,
+        lg: 6,
+        xl: 6,
+        xs: 12,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 60
@@ -27233,7 +27235,9 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
         item: true,
-        xs: 6,
+        lg: 6,
+        xl: 6,
+        xs: 12,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 68
@@ -27307,7 +27311,9 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
         item: true,
-        xs: 6,
+        lg: 6,
+        xl: 6,
+        xs: 12,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 91
@@ -27339,7 +27345,9 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
         item: true,
-        xs: 6,
+        lg: 6,
+        xl: 6,
+        xs: 12,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 99
@@ -27428,7 +27436,9 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
         item: true,
-        xs: 6,
+        lg: 6,
+        xl: 6,
+        xs: 12,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 143
@@ -27512,13 +27522,37 @@ function (_React$Component) {
           lineNumber: 158
         },
         __self: this
-      }, "Automatic transpilation and bundling (with webpack and babel)"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        variant: "body1",
+        gutterBottom: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 158
+        },
+        __self: this
+      }, "Automatic transpilation and bundling (with webpack and babel)")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 159
         },
         __self: this
-      }, "Hot code reloading"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        variant: "body1",
+        gutterBottom: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 159
+        },
+        __self: this
+      }, "Hot code reloading")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 160
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        variant: "body1",
+        gutterBottom: true,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 160
@@ -27530,7 +27564,15 @@ function (_React$Component) {
           lineNumber: 160
         },
         __self: this
-      }, "./pages")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, "./pages"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 161
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        variant: "body1",
+        gutterBottom: true,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 161
@@ -27548,7 +27590,7 @@ function (_React$Component) {
           lineNumber: 161
         },
         __self: this
-      }, "/static/")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      }, "/static/"))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
         container: true,
         item: true,
         spacing: 0,
@@ -27560,7 +27602,9 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
         item: true,
-        xs: 6,
+        lg: 6,
+        xl: 6,
+        xs: 12,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 167
@@ -27614,7 +27658,9 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
         item: true,
-        xs: 6,
+        lg: 6,
+        xl: 6,
+        xs: 12,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 178
@@ -27677,7 +27723,9 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
         item: true,
-        xs: 6,
+        lg: 6,
+        xl: 6,
+        xs: 12,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 191
@@ -27709,7 +27757,9 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
         item: true,
-        xs: 6,
+        lg: 6,
+        xl: 6,
+        xs: 12,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 199
@@ -27764,7 +27814,9 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
         item: true,
-        xs: 6,
+        lg: 6,
+        xl: 6,
+        xs: 12,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 214
@@ -27796,7 +27848,9 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
         item: true,
-        xs: 6,
+        lg: 6,
+        xl: 6,
+        xs: 12,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 222
