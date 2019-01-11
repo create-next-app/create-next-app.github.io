@@ -57,7 +57,7 @@ class Index extends React.Component {
         <div style={{ display: 'flex', margin: 40 }}>
           <Grid container spacing={24} direction="column">
             <Grid container item spacing={0} justify="center">
-              <Grid item xs={6}>
+              <Grid item lg={6} xl={6} xs={12}>
                 <Typography variant="h4" gutterBottom>
                   Installation
                 </Typography>
@@ -65,7 +65,7 @@ class Index extends React.Component {
               </Grid>
             </Grid>
             <Grid container item spacing={0} justify="center" >
-              <Grid item xs={6}>
+              <Grid item lg={6} xl={6} xs={12}>
                 <Typography variant="body1" gutterBottom>
                   create-next-app-cli is available on npm:
                 </Typography>
@@ -88,7 +88,7 @@ class Index extends React.Component {
               </Grid>
             </Grid>
             <Grid container item spacing={0} justify="center">
-              <Grid item xs={6}>
+              <Grid item lg={6} xl={6} xs={12}>
                 <Typography variant="h4" gutterBottom>
                   Creating an App
                 </Typography>
@@ -96,7 +96,7 @@ class Index extends React.Component {
               </Grid>
             </Grid>
             <Grid container item spacing={0} justify="center" >
-              <Grid item xs={6}>
+              <Grid item lg={6} xl={6} xs={12}>
                 <Typography variant="body1" gutterBottom>
                   Create a new Next.js app with `default` and `material` UI:
                 </Typography>
@@ -140,7 +140,7 @@ class Index extends React.Component {
               </Grid>
             </Grid>
             <Grid container item spacing={0} justify="center" >
-              <Grid item xs={6}>
+              <Grid item lg={6} xl={6} xs={12}>
                 <Typography variant="h5" gutterBottom className="section">
                   <code>npm run dev</code> or <code>yarn dev</code>
                 </Typography>
@@ -164,7 +164,7 @@ class Index extends React.Component {
               </Grid>
             </Grid>
             <Grid container item spacing={0} justify="center">
-              <Grid item xs={6}>
+              <Grid item lg={6} xl={6} xs={12}>
                 <Typography variant="h5" gutterBottom className="section">
                   <code>npm run build</code> or <code>yarn build</code>
                 </Typography>
@@ -175,7 +175,7 @@ class Index extends React.Component {
               </Grid>
             </Grid>
             <Grid container item spacing={0} justify="center">
-              <Grid item xs={6}>
+              <Grid item lg={6} xl={6} xs={12}>
                 <Typography variant="h5" gutterBottom className="section">
                   <code>npm run start</code> or <code>yarn start</code>
                 </Typography>
@@ -188,7 +188,7 @@ class Index extends React.Component {
               </Grid>
             </Grid>
             <Grid container item spacing={0} justify="center">
-              <Grid item xs={6}>
+              <Grid item lg={6} xl={6} xs={12}>
                 <Typography variant="h4" gutterBottom>
                   Starting Next.js Examples
                 </Typography>
@@ -196,7 +196,7 @@ class Index extends React.Component {
               </Grid>
             </Grid>
             <Grid container item spacing={0} justify="center">
-              <Grid item xs={6}>
+              <Grid item lg={6} xl={6} xs={12}>
                 <Typography variant="body1" gutterBottom>
                   There are a bunch of examples in the <a href="https://github.com/zeit/next.js/tree/canary/examples" target="_blank">Next.js repository</a> (and growing) that you can use to bootstrap your app.
                 </Typography>
@@ -211,7 +211,7 @@ class Index extends React.Component {
               </Grid>
             </Grid>
             <Grid container item spacing={0} justify="center">
-              <Grid item xs={6}>
+              <Grid item lg={6} xl={6} xs={12}>
                 <Typography variant="h4" gutterBottom>
                   User Guide
                 </Typography>
@@ -219,7 +219,7 @@ class Index extends React.Component {
               </Grid>
             </Grid>
             <Grid container item spacing={0} justify="center">
-              <Grid item xs={6}>
+              <Grid item lg={6} xl={6} xs={12}>
                 <Typography variant="body1" gutterBottom>
                   You can find detailed instructions on using Next.js and many tips in <a href="https://nextjs.org/docs/" target="_blank">its documentation</a>.
                 </Typography>
