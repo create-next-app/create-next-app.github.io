@@ -12,6 +12,8 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 import Head from '../components/head';
 import Nav from '../components/nav';
 
+import Select from '@material-ui/core/Select';
+
 const styles = theme => ({
   root: {
     textAlign: 'center',
@@ -26,6 +28,14 @@ const styles = theme => ({
 });
 
 class Index extends React.Component {
+  state = {
+    selectedOption: "basic-css",
+  };
+
+  handleChange = name => event => {
+    this.setState({ [name]: event.target.value });
+  };
+
   render() {
     const { classes } = this.props;
 
@@ -59,7 +69,37 @@ class Index extends React.Component {
             <Grid container item spacing={0} justify="center">
               <Grid item lg={6} xl={6} xs={12}>
                 <Typography variant="h4" gutterBottom>
-                  Installation
+                  What is Next.js?
+                </Typography>
+                <hr/>
+              </Grid>
+            </Grid>
+            <Grid container item spacing={0} justify="center">
+              <Grid item lg={6} xl={6} xs={12}>
+                <Typography variant="body1" gutterBottom>
+                  <a href="https://github.com/zeit/next.js" target="_blank">Next.js</a> is a very popular <a href="https://nodejs.org/en/about/" target="_blank">Node.js</a> framework which enables an easy server-side React rendering, and provides many other amazing features.
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid container item spacing={0} justify="center">
+              <Grid item lg={6} xl={6} xs={12}>
+                <Typography variant="h4" gutterBottom>
+                  What is create-next-app-cli?
+                </Typography>
+                <hr/>
+              </Grid>
+            </Grid>
+            <Grid container item spacing={0} justify="center">
+              <Grid item lg={6} xl={6} xs={12}>
+                <Typography variant="body1" gutterBottom>
+                  create-next-app-cli is a command line interface (CLI) for easily creating Next.js apps in one command.
+                </Typography>
+              </Grid>
+            </Grid>
+            <Grid container item spacing={0} justify="center">
+              <Grid item lg={6} xl={6} xs={12}>
+                <Typography variant="h4" gutterBottom>
+                  Installing create-next-app CLI
                 </Typography>
                 <hr/>
               </Grid>
@@ -198,14 +238,45 @@ class Index extends React.Component {
             <Grid container item spacing={0} justify="center">
               <Grid item lg={6} xl={6} xs={12}>
                 <Typography variant="body1" gutterBottom>
-                  There are a bunch of examples in the <a href="https://github.com/zeit/next.js/tree/canary/examples" target="_blank">Next.js repository</a> (and growing) that you can use to bootstrap your app.
+                  There are a bunch of examples in the Next.js that you can use to bootstrap your app.
                 </Typography>
-                <Typography variant="body1" gutterBottom>
-                  Run command below to use an example:
+                <Grid container spacing={24}>
+                  <Grid item lg={3} xl={3} xs={12}>
+                    <label>
+                      <Typography variant="body1">
+                        Choose an example:
+                      </Typography>
+                    </label>
+                  </Grid>
+                </Grid>
+                <div id="examples">
+                  <Grid container spacing={24}>
+                    <Grid item lg={3} xl={3} xs={12}>
+                      <Select
+                        native
+                        value={this.state.selectedOption}
+                        onChange={this.handleChange('selectedOption')}
+                        inputProps={{
+                          name: 'selectedOption',
+                          id: 'selectedOption',
+                        }}
+                      >
+                        <option value={"basic-css"}>Basic css</option>
+                        <option value={"with-redux"}>Redux</option>
+                        <option value={"with-redux-wrapper"}>Redux wrapper</option>
+                        <option value={"with-redux-saga"}>Redux saga</option>
+                        <option value={"with-apollo-and-redux"}>Apollo and redux</option>
+                        <option value={"with-apollo-and-redux-saga"}>Apollo and redux saga</option>
+                      </Select>
+                    </Grid>
+                  </Grid>
+                </div>
+                <Typography variant="body1" gutterBottom className="section">
+                  And run command below to bootstrap your app:
                 </Typography>
                 <pre>
                   <code className="language-javascript">
-                    {`create-next-app example-app-name --example basic-csss`}
+                    {`create-next-app my-app --example ${this.state.selectedOption}`}
                   </code>
                 </pre>
               </Grid>
