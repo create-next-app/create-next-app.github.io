@@ -43,7 +43,7 @@ class Index extends React.Component {
               Create Next App
             </Typography>
             <Typography variant="body1" gutterBottom>
-              Create Next.js App building tools
+              Create <a href="https://github.com/zeit/next.js" target="_blank">Next.js</a> App building tools
             </Typography>
             <Button href={'https://github.com/themodernjavascript/create-next-app-cli'} variant="contained" color="secondary" className={classes.button}>
               <SvgIcon style={{color: 'white'}}>
@@ -228,7 +228,10 @@ class Index extends React.Component {
           </Grid>
         </div>
         <footer>
-          <div>© 2019 Copyright</div>
+          <div>
+            <iframe src="https://ghbtns.com/github-btn.html?user=themodernjavascript&repo=create-next-app-cli&type=star&count=true" frameBorder="0" scrolling="0" width="80px" height="20px"></iframe>
+            <iframe src="https://ghbtns.com/github-btn.html?user=themodernjavascript&repo=create-next-app-cli&type=fork&count=true" frameBorder="0" scrolling="0" width="80px" height="20px"></iframe>
+          </div>
         </footer>
       </div>
     );

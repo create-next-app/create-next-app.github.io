@@ -23,7 +23,7 @@
       "publicPath": "static/chunks/commons.cfb4390aeca9609a2cf8.js"
     }
   ],
-  "../modules/_core": [
+  "../../modules/_core": [
     {
       "id": 4,
       "name": "./node_modules/core-js/library/modules/_core.js",
@@ -549,6 +549,12 @@
       "name": "./node_modules/@babel/runtime-corejs2/helpers/typeof.js",
       "file": "static/chunks/commons.cfb4390aeca9609a2cf8.js",
       "publicPath": "static/chunks/commons.cfb4390aeca9609a2cf8.js"
+    },
+    {
+      "id": 82,
+      "name": "./node_modules/next/node_modules/@babel/runtime/helpers/typeof.js",
+      "file": "static/chunks/commons.cfb4390aeca9609a2cf8.js",
+      "publicPath": "static/chunks/commons.cfb4390aeca9609a2cf8.js"
     }
   ],
   "@babel/runtime-corejs2/core-js/set": [
@@ -599,14 +605,6 @@
     {
       "id": 81,
       "name": "./node_modules/deepmerge/dist/umd.js",
-      "file": "static/chunks/commons.cfb4390aeca9609a2cf8.js",
-      "publicPath": "static/chunks/commons.cfb4390aeca9609a2cf8.js"
-    }
-  ],
-  "@babel/runtime/helpers/typeof": [
-    {
-      "id": 82,
-      "name": "./node_modules/next/node_modules/@babel/runtime/helpers/typeof.js",
       "file": "static/chunks/commons.cfb4390aeca9609a2cf8.js",
       "publicPath": "static/chunks/commons.cfb4390aeca9609a2cf8.js"
     }
