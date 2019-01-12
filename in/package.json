@@ -1,7 +1,7 @@
 {
   "name": "create-next-app-cli",
   "version": "0.0.1",
-  "description": "",
+  "description": "create-next-app-cli is a command line interface (CLI) for easily creating Next.js apps in one command.",
   "main": "index.js",
   "scripts": {
     "dev": "next",
@@ -10,7 +10,7 @@
     "export": "npm run build && next export"
   },
   "keywords": [],
-  "author": "",
+  "author": "Bunlong <bunlong.van@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "@material-ui/core": "^3.8.2",

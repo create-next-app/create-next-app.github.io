@@ -1,10 +1,10 @@
-import NextHead from 'next/head'
-import { string } from 'prop-types'
+import NextHead from 'next/head';
+import { string } from 'prop-types';
 
-const defaultDescription = ''
-const defaultKeywords = ''
-const defaultOGURL = ''
-const defaultOGImage = ''
+const defaultDescription = '';
+const defaultKeywords = '';
+const defaultOGURL = '';
+const defaultOGImage = '';
 
 const Head = (props) => (
   <NextHead>
@@ -13,12 +13,13 @@ const Head = (props) => (
     <link href="./static/prism.css" rel="stylesheet" />
     <script src="./static/prism.js"></script>
     <meta name="description" content={props.description || defaultDescription} />
-    <meta name="keywords" content={props.keywords || defaultKeywords} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" sizes="192x192" href="/static/touch-icon.png" />
-    <link rel="apple-touch-icon" href="/static/touch-icon.png" />
-    <link rel="mask-icon" href="/static/favicon-mask.svg" color="#49B882" />
-    <link rel="icon" href="/static/favicon.ico" />
+    <meta name="keywords" content={props.keywords || defaultKeywords} />
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
+    <link rel="shortcut icon" href="/static/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" />
+    <link rel="mask-icon" href="/static/favicon-mask.svg" color="#000000" />
     <meta property="og:url" content={props.url || defaultOGURL} />
     <meta property="og:title" content={props.title || ''} />
     <meta property="og:description" content={props.description || defaultDescription} />
@@ -36,6 +37,6 @@ Head.propTypes = {
   description: string,
   url: string,
   ogImage: string
-}
+};
 
-export default Head
+export default Head;

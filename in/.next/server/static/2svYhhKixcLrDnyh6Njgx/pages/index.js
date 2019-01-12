@@ -169,7 +169,7 @@ module.exports = require("@material-ui/core/Toolbar");
 /* 19 */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/core/Select");
+module.exports = require("react-select");
 
 /***/ }),
 /* 20 */,
@@ -246,25 +246,32 @@ var head_Head = function Head(props) {
     name: "description",
     content: props.description || defaultDescription
   }), external_react_default.a.createElement("meta", {
-    name: "keywords",
-    content: props.keywords || defaultKeywords
-  }), external_react_default.a.createElement("meta", {
     name: "viewport",
     content: "width=device-width, initial-scale=1"
+  }), external_react_default.a.createElement("meta", {
+    name: "keywords",
+    content: props.keywords || defaultKeywords
   }), external_react_default.a.createElement("link", {
     rel: "icon",
-    sizes: "192x192",
-    href: "/static/touch-icon.png"
+    type: "image/png",
+    sizes: "16x16",
+    href: "/static/favicon-16x16.png"
+  }), external_react_default.a.createElement("link", {
+    rel: "icon",
+    type: "image/png",
+    sizes: "32x32",
+    href: "/static/favicon-32x32.png"
+  }), external_react_default.a.createElement("link", {
+    rel: "shortcut icon",
+    href: "/static/favicon.ico"
   }), external_react_default.a.createElement("link", {
     rel: "apple-touch-icon",
-    href: "/static/touch-icon.png"
+    sizes: "180x180",
+    href: "/static/apple-touch-icon.png"
   }), external_react_default.a.createElement("link", {
     rel: "mask-icon",
     href: "/static/favicon-mask.svg",
-    color: "#49B882"
-  }), external_react_default.a.createElement("link", {
-    rel: "icon",
-    href: "/static/favicon.ico"
+    color: "#000000"
   }), external_react_default.a.createElement("meta", {
     property: "og:url",
     content: props.url || defaultOGURL
@@ -355,9 +362,9 @@ function Nav(props) {
 }
 
 /* harmony default export */ var nav = (Object(styles_["withStyles"])(styles)(Nav));
-// EXTERNAL MODULE: external "@material-ui/core/Select"
-var Select_ = __webpack_require__(19);
-var Select_default = /*#__PURE__*/__webpack_require__.n(Select_);
+// EXTERNAL MODULE: external "react-select"
+var external_react_select_ = __webpack_require__(19);
+var external_react_select_default = /*#__PURE__*/__webpack_require__.n(external_react_select_);
 
 // CONCATENATED MODULE: ./pages/index.js
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -408,6 +415,26 @@ var pages_styles = function styles(theme) {
   };
 };
 
+var options = [{
+  value: 'basic-css',
+  label: 'Basic css'
+}, {
+  value: 'with-redux',
+  label: 'Redux'
+}, {
+  value: 'with-redux-wrapper',
+  label: 'Redux wrapper'
+}, {
+  value: 'with-redux-saga',
+  label: 'Redux saga'
+}, {
+  value: 'with-apollo-and-redux',
+  label: 'Apollo and redux'
+}, {
+  value: 'with-apollo-and-redux-saga',
+  label: 'Apollo and redux saga'
+}];
+
 var pages_Index =
 /*#__PURE__*/
 function (_React$Component) {
@@ -427,13 +454,16 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Index)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
-      selectedOption: "basic-css"
+      selectedOption: {
+        value: 'basic-css',
+        label: 'Basic css'
+      }
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleChange", function (name) {
-      return function (event) {
-        _this.setState(_defineProperty({}, name, event.target.value));
-      };
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleChange", function (selectedOption) {
+      _this.setState({
+        selectedOption: selectedOption
+      });
     });
 
     return _this;
@@ -443,6 +473,7 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       var classes = this.props.classes;
+      var selectedOption = this.state.selectedOption;
       return external_react_default.a.createElement("div", null, external_react_default.a.createElement(head, {
         title: "Create Next App",
         description: "Command line interface (CLI) for easily creating Next.js apps in one command.",
@@ -737,33 +768,17 @@ function (_React$Component) {
         lg: 3,
         xl: 3,
         xs: 12
-      }, external_react_default.a.createElement(Select_default.a, {
-        native: true,
-        value: this.state.selectedOption,
-        onChange: this.handleChange('selectedOption'),
-        inputProps: {
-          name: 'selectedOption',
-          id: 'selectedOption'
-        }
-      }, external_react_default.a.createElement("option", {
-        value: "basic-css"
-      }, "Basic css"), external_react_default.a.createElement("option", {
-        value: "with-redux"
-      }, "Redux"), external_react_default.a.createElement("option", {
-        value: "with-redux-wrapper"
-      }, "Redux wrapper"), external_react_default.a.createElement("option", {
-        value: "with-redux-saga"
-      }, "Redux saga"), external_react_default.a.createElement("option", {
-        value: "with-apollo-and-redux"
-      }, "Apollo and redux"), external_react_default.a.createElement("option", {
-        value: "with-apollo-and-redux-saga"
-      }, "Apollo and redux saga"))))), external_react_default.a.createElement(Typography_default.a, {
+      }, external_react_default.a.createElement(external_react_select_default.a, {
+        value: selectedOption,
+        onChange: this.handleChange,
+        options: options
+      })))), external_react_default.a.createElement(Typography_default.a, {
         variant: "body1",
         gutterBottom: true,
         className: "section"
       }, "And run command below to bootstrap your app:"), external_react_default.a.createElement("pre", null, external_react_default.a.createElement("code", {
         className: "language-javascript"
-      }, "create-next-app my-app --example ".concat(this.state.selectedOption))))), external_react_default.a.createElement(Grid_default.a, {
+      }, "create-next-app my-app --example ".concat(selectedOption.value))))), external_react_default.a.createElement(Grid_default.a, {
         container: true,
         item: true,
         spacing: 0,

@@ -20,7 +20,7 @@
       "external \"@material-ui/core/Button\"": 16,
       "external \"@material-ui/core/AppBar\"": 17,
       "external \"@material-ui/core/Toolbar\"": 18,
-      "external \"@material-ui/core/Select\"": 19,
+      "external \"react-select\"": 19,
       "multi ./pages/_app.js": 20,
       "multi ./pages/_document.js": 21,
       "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/_document.js": 22,
@@ -65,17 +65,21 @@
   },
   "chunks": {
     "byName": {
-      "static/NIn58faFBSwTKQlZ~FpEO/pages/_app.js": 0,
-      "static/NIn58faFBSwTKQlZ~FpEO/pages/_document.js": 1,
-      "static/NIn58faFBSwTKQlZ~FpEO/pages/index.js": 2,
-      "static/NIn58faFBSwTKQlZ~FpEO/pages/_error.js": 3
+      "static/i8FSX~YQoC2H8C4opVT8u/pages/_app.js": 0,
+      "static/i8FSX~YQoC2H8C4opVT8u/pages/_document.js": 1,
+      "static/i8FSX~YQoC2H8C4opVT8u/pages/index.js": 2,
+      "static/i8FSX~YQoC2H8C4opVT8u/pages/_error.js": 3,
+      "static/2svYhhKixcLrDnyh6Njgx/pages/_app.js": 4,
+      "static/2svYhhKixcLrDnyh6Njgx/pages/_document.js": 5,
+      "static/2svYhhKixcLrDnyh6Njgx/pages/index.js": 6,
+      "static/2svYhhKixcLrDnyh6Njgx/pages/_error.js": 7
     },
     "bySource": {},
     "usedIds": [
-      0,
-      1,
-      2,
-      3
+      4,
+      5,
+      6,
+      7
     ]
   }
 }

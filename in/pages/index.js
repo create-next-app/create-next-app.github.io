@@ -12,7 +12,7 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 import Head from '../components/head';
 import Nav from '../components/nav';
 
-import Select from '@material-ui/core/Select';
+import Select from 'react-select';
 
 const styles = theme => ({
   root: {
@@ -27,17 +27,27 @@ const styles = theme => ({
   }
 });
 
+const options = [
+  { value: 'basic-css', label: 'Basic css' },
+  { value: 'with-redux', label: 'Redux' },
+  { value: 'with-redux-wrapper', label: 'Redux wrapper' },
+  { value: 'with-redux-saga', label: 'Redux saga' },
+  { value: 'with-apollo-and-redux', label: 'Apollo and redux' },
+  { value: 'with-apollo-and-redux-saga', label: 'Apollo and redux saga' }
+];
+
 class Index extends React.Component {
   state = {
-    selectedOption: "basic-css",
-  };
+    selectedOption: { value: 'basic-css', label: 'Basic css' },
+  }
 
-  handleChange = name => event => {
-    this.setState({ [name]: event.target.value });
-  };
+  handleChange = (selectedOption) => {
+    this.setState({ selectedOption });
+  }
 
   render() {
     const { classes } = this.props;
+    const { selectedOption } = this.state;
 
     return (
       <div>
@@ -253,21 +263,10 @@ class Index extends React.Component {
                   <Grid container spacing={24}>
                     <Grid item lg={3} xl={3} xs={12}>
                       <Select
-                        native
-                        value={this.state.selectedOption}
-                        onChange={this.handleChange('selectedOption')}
-                        inputProps={{
-                          name: 'selectedOption',
-                          id: 'selectedOption',
-                        }}
-                      >
-                        <option value={"basic-css"}>Basic css</option>
-                        <option value={"with-redux"}>Redux</option>
-                        <option value={"with-redux-wrapper"}>Redux wrapper</option>
-                        <option value={"with-redux-saga"}>Redux saga</option>
-                        <option value={"with-apollo-and-redux"}>Apollo and redux</option>
-                        <option value={"with-apollo-and-redux-saga"}>Apollo and redux saga</option>
-                      </Select>
+                        value={selectedOption}
+                        onChange={this.handleChange}
+                        options={options}
+                      />
                     </Grid>
                   </Grid>
                 </div>
@@ -276,7 +275,7 @@ class Index extends React.Component {
                 </Typography>
                 <pre>
                   <code className="language-javascript">
-                    {`create-next-app my-app --example ${this.state.selectedOption}`}
+                    {`create-next-app my-app --example ${selectedOption.value}`}
                   </code>
                 </pre>
               </Grid>

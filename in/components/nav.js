@@ -1,8 +1,8 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
-import Typography from '@material-ui/core/Typography'
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import SvgIcon from '@material-ui/core/SvgIcon';
 
@@ -13,10 +13,10 @@ const styles = {
   grow: {
     flexGrow: 1,
   }
-}
+};
 
 function Nav(props) {
-  const { classes } = props
+  const { classes } = props;
 
   return (
     <div className={classes.root}>
@@ -43,4 +43,4 @@ function Nav(props) {
   )
 }
 
-export default withStyles(styles)(Nav)
+export default withStyles(styles)(Nav);
