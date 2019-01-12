@@ -53,7 +53,7 @@ class Index extends React.Component {
       <div>
         <Head
           title="Create Next App"
-          description="Command line interface (CLI) for easily creating Next.js apps in one command."
+          description="create-next-app-cli is a command line interface (CLI) for easily creating Next.js apps in one command."
           keywords="next, nextjs, react, reactjs, create-next-app, create-next-app-cli, create-react-app, server-side-rendering, zero-configuration, build-tools, boilerplate"
         />
         <Nav />
