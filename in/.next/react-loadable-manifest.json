@@ -23,7 +23,7 @@
       "publicPath": "static/chunks/commons.9e372ff262f4f025dda6.js"
     }
   ],
-  "../modules/_core": [
+  "../../modules/_core": [
     {
       "id": 5,
       "name": "./node_modules/core-js/library/modules/_core.js",
@@ -1275,7 +1275,7 @@
       "publicPath": "static/chunks/commons.9e372ff262f4f025dda6.js"
     }
   ],
-  "./createBreakpoints": [
+  "../styles/createBreakpoints": [
     {
       "id": 182,
       "name": "./node_modules/@material-ui/core/styles/createBreakpoints.js",

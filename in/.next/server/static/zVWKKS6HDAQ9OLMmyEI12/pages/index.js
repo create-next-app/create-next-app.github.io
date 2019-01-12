@@ -765,8 +765,8 @@ function (_React$Component) {
         spacing: 24
       }, external_react_default.a.createElement(Grid_default.a, {
         item: true,
-        lg: 3,
-        xl: 3,
+        lg: 4,
+        xl: 4,
         xs: 12
       }, external_react_default.a.createElement(external_react_select_default.a, {
         value: selectedOption,

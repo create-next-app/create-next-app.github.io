@@ -261,7 +261,7 @@ class Index extends React.Component {
                 </Grid>
                 <div id="examples">
                   <Grid container spacing={24}>
-                    <Grid item lg={3} xl={3} xs={12}>
+                    <Grid item lg={4} xl={4} xs={12}>
                       <Select
                         value={selectedOption}
                         onChange={this.handleChange}

@@ -35791,8 +35791,8 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
         item: true,
-        lg: 3,
-        xl: 3,
+        lg: 4,
+        xl: 4,
         xs: 12,
         __source: {
           fileName: _jsxFileName,
