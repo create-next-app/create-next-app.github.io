@@ -4,5 +4,10 @@ module.exports = {
       fs: 'empty'
     }
     return config
+  },
+  exportPathMap: async function (defaultPathMap) {
+    return {
+      '/': { page: '/' }
+    }
   }
 }
