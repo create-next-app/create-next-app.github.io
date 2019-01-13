@@ -207,6 +207,7 @@ var Head = function Head(props) {
 Head.propTypes = {
   title: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"],
   description: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"],
+  keywords: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"],
   url: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"],
   ogImage: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"]
 };
@@ -34924,7 +34925,7 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_head__WEBPACK_IMPORTED_MODULE_8__["default"], {
         title: "Create Next App",
-        description: "Command line interface (CLI) for easily creating Next.js apps in one command.",
+        description: "create-next-app-cli is a command line interface (CLI) for easily creating Next.js apps in one command.",
         keywords: "next, nextjs, react, reactjs, create-next-app, create-next-app-cli, create-react-app, server-side-rendering, zero-configuration, build-tools, boilerplate",
         __source: {
           fileName: _jsxFileName,

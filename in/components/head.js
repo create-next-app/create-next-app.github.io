@@ -35,6 +35,7 @@ const Head = (props) => (
 Head.propTypes = {
   title: string,
   description: string,
+  keywords: string,
   url: string,
   ogImage: string
 };
