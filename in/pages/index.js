@@ -8,11 +8,10 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import SvgIcon from '@material-ui/core/SvgIcon';
+import Select from 'react-select';
 
 import Head from '../components/head';
 import Nav from '../components/nav';
-
-import Select from 'react-select';
 
 const styles = theme => ({
   root: {
@@ -27,7 +26,12 @@ const styles = theme => ({
   }
 });
 
-const options = [
+const templateOptions = [
+  { value: 'default', label: 'default' },
+  { value: 'material', label: 'material' }
+];
+
+const exampleOptions = [
   { value: 'basic-css', label: 'Basic css' },
   { value: 'with-redux', label: 'Redux' },
   { value: 'with-redux-wrapper', label: 'Redux wrapper' },
@@ -38,16 +42,21 @@ const options = [
 
 class Index extends React.Component {
   state = {
-    selectedOption: { value: 'basic-css', label: 'Basic css' },
+    selectedTemplate: { value: 'default', label: 'default' },
+    selectedExample: { value: 'basic-css', label: 'Basic css' }
   }
 
-  handleChange = (selectedOption) => {
-    this.setState({ selectedOption });
+  handleChangeTemplate = (selectedTemplate) => {
+    this.setState({ selectedTemplate });
+  }
+
+  handleChangeExample = (selectedExample) => {
+    this.setState({ selectedExample });
   }
 
   render() {
     const { classes } = this.props;
-    const { selectedOption } = this.state;
+    const { selectedTemplate, selectedExample } = this.state;
 
     return (
       <div>
@@ -148,11 +157,34 @@ class Index extends React.Component {
             <Grid container item spacing={0} justify="center" >
               <Grid item lg={6} xl={6} xs={12}>
                 <Typography variant="body1" gutterBottom>
-                  Create a new Next.js app with `default` and `material` UI:
+                  Create a new Next.js app with <code>default</code> or <code>material</code> templates.
+                </Typography>
+                <Grid container spacing={24}>
+                  <Grid item lg={3} xl={3} xs={12}>
+                    <label>
+                      <Typography variant="body1">
+                        Choose a template:
+                      </Typography>
+                    </label>
+                  </Grid>
+                </Grid>
+                <div id="templates">
+                  <Grid container spacing={24}>
+                    <Grid item lg={4} xl={4} xs={12}>
+                      <Select
+                        value={selectedTemplate}
+                        onChange={this.handleChangeTemplate}
+                        options={templateOptions}
+                      />
+                    </Grid>
+                  </Grid>
+                </div>
+                <Typography variant="body1" gutterBottom className="section">
+                  And run command below:
                 </Typography>
                 <pre>
                   <code className="language-javascript">
-                  {`create-next-app my-app --template default`}
+                  {`create-next-app my-app --template ${selectedTemplate.value}`}
                   </code>
                 </pre>
                 <Typography variant="body1" gutterBottom>
@@ -263,9 +295,9 @@ class Index extends React.Component {
                   <Grid container spacing={24}>
                     <Grid item lg={4} xl={4} xs={12}>
                       <Select
-                        value={selectedOption}
-                        onChange={this.handleChange}
-                        options={options}
+                        value={selectedExample}
+                        onChange={this.handleChangeExample}
+                        options={exampleOptions}
                       />
                     </Grid>
                   </Grid>
@@ -275,7 +307,7 @@ class Index extends React.Component {
                 </Typography>
                 <pre>
                   <code className="language-javascript">
-                    {`create-next-app my-app --example ${selectedOption.value}`}
+                    {`create-next-app my-app --example ${selectedExample.value}`}
                   </code>
                 </pre>
               </Grid>

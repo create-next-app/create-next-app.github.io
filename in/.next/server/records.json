@@ -2,8 +2,8 @@
   "modules": {
     "byIdentifier": {
       "external \"react\"": 0,
-      "external \"@material-ui/core/Typography\"": 1,
-      "external \"@material-ui/core/Grid\"": 2,
+      "external \"@material-ui/core/Grid\"": 1,
+      "external \"@material-ui/core/Typography\"": 2,
       "external \"@material-ui/core/styles\"": 3,
       "external \"next/head\"": 4,
       "external \"next/document\"": 5,
@@ -13,14 +13,14 @@
       "external \"@material-ui/core/colors/green\"": 9,
       "external \"next/link\"": 10,
       "external \"next/app\"": 11,
-      "external \"@material-ui/core/CssBaseline\"": 12,
-      "external \"react-jss/lib/JssProvider\"": 13,
-      "external \"jss\"": 14,
-      "external \"styled-jsx/server\"": 15,
-      "external \"@material-ui/core/Button\"": 16,
-      "external \"@material-ui/core/AppBar\"": 17,
-      "external \"@material-ui/core/Toolbar\"": 18,
-      "external \"react-select\"": 19,
+      "external \"react-select\"": 12,
+      "external \"@material-ui/core/CssBaseline\"": 13,
+      "external \"react-jss/lib/JssProvider\"": 14,
+      "external \"jss\"": 15,
+      "external \"styled-jsx/server\"": 16,
+      "external \"@material-ui/core/Button\"": 17,
+      "external \"@material-ui/core/AppBar\"": 18,
+      "external \"@material-ui/core/Toolbar\"": 19,
       "multi ./pages/_app.js": 20,
       "multi ./pages/_document.js": 21,
       "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/_document.js": 22,
@@ -65,21 +65,17 @@
   },
   "chunks": {
     "byName": {
-      "static/wA8fC7LQN6ZxP4d1kKQ4S/pages/_app.js": 0,
-      "static/wA8fC7LQN6ZxP4d1kKQ4S/pages/_document.js": 1,
-      "static/wA8fC7LQN6ZxP4d1kKQ4S/pages/index.js": 2,
-      "static/wA8fC7LQN6ZxP4d1kKQ4S/pages/_error.js": 3,
-      "static/Z4NSLqH3gowP3BAET5q2o/pages/_app.js": 4,
-      "static/Z4NSLqH3gowP3BAET5q2o/pages/_document.js": 5,
-      "static/Z4NSLqH3gowP3BAET5q2o/pages/index.js": 6,
-      "static/Z4NSLqH3gowP3BAET5q2o/pages/_error.js": 7
+      "static/6yzIC~zoQIPmik9rKK5ZG/pages/_app.js": 0,
+      "static/6yzIC~zoQIPmik9rKK5ZG/pages/_document.js": 1,
+      "static/6yzIC~zoQIPmik9rKK5ZG/pages/index.js": 2,
+      "static/6yzIC~zoQIPmik9rKK5ZG/pages/_error.js": 3
     },
     "bySource": {},
     "usedIds": [
-      4,
-      5,
-      6,
-      7
+      0,
+      1,
+      2,
+      3
     ]
   }
 }

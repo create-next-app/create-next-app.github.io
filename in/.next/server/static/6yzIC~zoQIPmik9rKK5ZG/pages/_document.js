@@ -88,185 +88,51 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 20);
+/******/ 	return __webpack_require__(__webpack_require__.s = 21);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ (function(module, exports) {
 
 module.exports = require("react");
 
 /***/ }),
-/* 1 */,
-/* 2 */,
-/* 3 */
+
+/***/ 16:
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/core/styles");
+module.exports = require("styled-jsx/server");
 
 /***/ }),
-/* 4 */
-/***/ (function(module, exports) {
 
-module.exports = require("next/head");
-
-/***/ }),
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/colors/purple");
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/colors/green");
-
-/***/ }),
-/* 10 */,
-/* 11 */
-/***/ (function(module, exports) {
-
-module.exports = require("next/app");
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/CssBaseline");
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-jss/lib/JssProvider");
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports) {
-
-module.exports = require("jss");
-
-/***/ }),
-/* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */
+/***/ 21:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(28);
+module.exports = __webpack_require__(22);
 
 
 /***/ }),
-/* 21 */,
-/* 22 */,
-/* 23 */,
-/* 24 */,
-/* 25 */,
-/* 26 */,
-/* 27 */,
-/* 28 */
+
+/***/ 22:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5);
+/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var styled_jsx_server__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(16);
+/* harmony import */ var styled_jsx_server__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_server__WEBPACK_IMPORTED_MODULE_3__);
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
 
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(0);
-var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-// EXTERNAL MODULE: external "next/app"
-var app_ = __webpack_require__(11);
-var app_default = /*#__PURE__*/__webpack_require__.n(app_);
-
-// EXTERNAL MODULE: external "next/head"
-var head_ = __webpack_require__(4);
-var head_default = /*#__PURE__*/__webpack_require__.n(head_);
-
-// EXTERNAL MODULE: external "@material-ui/core/styles"
-var styles_ = __webpack_require__(3);
-
-// EXTERNAL MODULE: external "@material-ui/core/CssBaseline"
-var CssBaseline_ = __webpack_require__(12);
-var CssBaseline_default = /*#__PURE__*/__webpack_require__.n(CssBaseline_);
-
-// EXTERNAL MODULE: external "react-jss/lib/JssProvider"
-var JssProvider_ = __webpack_require__(13);
-var JssProvider_default = /*#__PURE__*/__webpack_require__.n(JssProvider_);
-
-// EXTERNAL MODULE: external "jss"
-var external_jss_ = __webpack_require__(14);
-
-// EXTERNAL MODULE: external "@material-ui/core/colors/purple"
-var purple_ = __webpack_require__(8);
-var purple_default = /*#__PURE__*/__webpack_require__.n(purple_);
-
-// EXTERNAL MODULE: external "@material-ui/core/colors/green"
-var green_ = __webpack_require__(9);
-var green_default = /*#__PURE__*/__webpack_require__.n(green_);
-
-// CONCATENATED MODULE: ./src/getPageContext.js
-
-
-
- // A theme with custom primary and secondary color.
-// It's optional.
-
-var theme = Object(styles_["createMuiTheme"])({
-  palette: {
-    primary: {
-      light: purple_default.a[300],
-      main: purple_default.a[500],
-      dark: purple_default.a[700]
-    },
-    secondary: {
-      light: green_default.a[300],
-      main: green_default.a[500],
-      dark: green_default.a[700]
-    }
-  },
-  typography: {
-    useNextVariants: true
-  }
-});
-
-function createPageContext() {
-  return {
-    theme: theme,
-    // This is needed in order to deduplicate the injection of CSS in the page.
-    sheetsManager: new Map(),
-    // This is needed in order to inject the critical CSS.
-    sheetsRegistry: new external_jss_["SheetsRegistry"](),
-    // The standard class name generator.
-    generateClassName: Object(styles_["createGenerateClassName"])()
-  };
-}
-
-var pageContext;
-function getPageContext() {
-  // Make sure to create a new context for every server-side request so that data
-  // isn't shared between connections (which would be bad).
-  if (true) {
-    return createPageContext();
-  } // Reuse context on the client-side.
-
-
-  if (!pageContext) {
-    pageContext = createPageContext();
-  }
-
-  return pageContext;
-}
-// CONCATENATED MODULE: ./pages/_app.js
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -289,56 +155,109 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-
-
-
-var _app_MyApp =
+var MyDocument =
 /*#__PURE__*/
-function (_App) {
-  _inherits(MyApp, _App);
+function (_Document) {
+  _inherits(MyDocument, _Document);
 
-  function MyApp() {
-    var _this;
+  function MyDocument() {
+    _classCallCheck(this, MyDocument);
 
-    _classCallCheck(this, MyApp);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(MyApp).call(this));
-    _this.pageContext = getPageContext();
-    return _this;
+    return _possibleConstructorReturn(this, _getPrototypeOf(MyDocument).apply(this, arguments));
   }
 
-  _createClass(MyApp, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      // Remove the server-side injected CSS.
-      var jssStyles = document.querySelector('#jss-server-side');
-
-      if (jssStyles && jssStyles.parentNode) {
-        jssStyles.parentNode.removeChild(jssStyles);
-      }
-    }
-  }, {
+  _createClass(MyDocument, [{
     key: "render",
     value: function render() {
-      var _this$props = this.props,
-          Component = _this$props.Component,
-          pageProps = _this$props.pageProps;
-      return external_react_default.a.createElement(app_["Container"], null, external_react_default.a.createElement(head_default.a, null, external_react_default.a.createElement("title", null, "My page")), external_react_default.a.createElement(JssProvider_default.a, {
-        registry: this.pageContext.sheetsRegistry,
-        generateClassName: this.pageContext.generateClassName
-      }, external_react_default.a.createElement(styles_["MuiThemeProvider"], {
-        theme: this.pageContext.theme,
-        sheetsManager: this.pageContext.sheetsManager
-      }, external_react_default.a.createElement(CssBaseline_default.a, null), external_react_default.a.createElement(Component, _extends({
-        pageContext: this.pageContext
-      }, pageProps)))));
+      var pageContext = this.props.pageContext;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("html", {
+        lang: "en",
+        dir: "ltr"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["Head"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+        charSet: "utf-8"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+        name: "viewport",
+        content: "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+        name: "theme-color",
+        content: pageContext ? pageContext.theme.palette.primary.main : null
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("body", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["Main"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_2__["NextScript"], null)));
     }
   }]);
 
-  return MyApp;
-}(app_default.a);
+  return MyDocument;
+}(next_document__WEBPACK_IMPORTED_MODULE_2___default.a);
 
-/* harmony default export */ var _app = __webpack_exports__["default"] = (_app_MyApp);
+MyDocument.getInitialProps = function (ctx) {
+  // Resolution order
+  //
+  // On the server:
+  // 1. app.getInitialProps
+  // 2. page.getInitialProps
+  // 3. document.getInitialProps
+  // 4. app.render
+  // 5. page.render
+  // 6. document.render
+  //
+  // On the server with error:
+  // 1. document.getInitialProps
+  // 2. app.render
+  // 3. page.render
+  // 4. document.render
+  //
+  // On the client
+  // 1. app.getInitialProps
+  // 2. page.getInitialProps
+  // 3. app.render
+  // 4. page.render
+  // Render app and page and get the context of the page with collected side effects.
+  var pageContext;
+  var page = ctx.renderPage(function (Component) {
+    var WrappedComponent = function WrappedComponent(props) {
+      pageContext = props.pageContext;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, props);
+    };
+
+    return WrappedComponent;
+  });
+  var css; // It might be undefined, e.g. after an error.
+
+  if (pageContext) {
+    css = pageContext.sheetsRegistry.toString();
+  }
+
+  return _objectSpread({}, page, {
+    pageContext: pageContext,
+    // Styles fragment is rendered after the app and page rendering finish.
+    styles: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
+      id: "jss-server-side" // eslint-disable-next-line react/no-danger
+      ,
+      dangerouslySetInnerHTML: {
+        __html: css
+      }
+    }), styled_jsx_server__WEBPACK_IMPORTED_MODULE_3___default()() || null)
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (MyDocument);
+
+/***/ }),
+
+/***/ 5:
+/***/ (function(module, exports) {
+
+module.exports = require("next/document");
+
+/***/ }),
+
+/***/ 6:
+/***/ (function(module, exports) {
+
+module.exports = require("prop-types");
 
 /***/ })
-/******/ ]);
+
+/******/ });

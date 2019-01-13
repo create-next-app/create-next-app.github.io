@@ -101,13 +101,13 @@ module.exports = require("react");
 /* 1 */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/core/Typography");
+module.exports = require("@material-ui/core/Grid");
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/core/Grid");
+module.exports = require("@material-ui/core/Typography");
 
 /***/ }),
 /* 3 */
@@ -144,32 +144,32 @@ module.exports = require("next/link");
 
 /***/ }),
 /* 11 */,
-/* 12 */,
+/* 12 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-select");
+
+/***/ }),
 /* 13 */,
 /* 14 */,
 /* 15 */,
-/* 16 */
+/* 16 */,
+/* 17 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Button");
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/AppBar");
 
 /***/ }),
-/* 18 */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/Toolbar");
-
-/***/ }),
 /* 19 */
 /***/ (function(module, exports) {
 
-module.exports = require("react-select");
+module.exports = require("@material-ui/core/Toolbar");
 
 /***/ }),
 /* 20 */,
@@ -206,20 +206,24 @@ var link_default = /*#__PURE__*/__webpack_require__.n(link_);
 var styles_ = __webpack_require__(3);
 
 // EXTERNAL MODULE: external "@material-ui/core/Typography"
-var Typography_ = __webpack_require__(1);
+var Typography_ = __webpack_require__(2);
 var Typography_default = /*#__PURE__*/__webpack_require__.n(Typography_);
 
 // EXTERNAL MODULE: external "@material-ui/core/Grid"
-var Grid_ = __webpack_require__(2);
+var Grid_ = __webpack_require__(1);
 var Grid_default = /*#__PURE__*/__webpack_require__.n(Grid_);
 
 // EXTERNAL MODULE: external "@material-ui/core/Button"
-var Button_ = __webpack_require__(16);
+var Button_ = __webpack_require__(17);
 var Button_default = /*#__PURE__*/__webpack_require__.n(Button_);
 
 // EXTERNAL MODULE: external "@material-ui/core/SvgIcon"
 var SvgIcon_ = __webpack_require__(7);
 var SvgIcon_default = /*#__PURE__*/__webpack_require__.n(SvgIcon_);
+
+// EXTERNAL MODULE: external "react-select"
+var external_react_select_ = __webpack_require__(12);
+var external_react_select_default = /*#__PURE__*/__webpack_require__.n(external_react_select_);
 
 // EXTERNAL MODULE: external "next/head"
 var head_ = __webpack_require__(4);
@@ -304,11 +308,11 @@ var head_Head = function Head(props) {
 
 /* harmony default export */ var head = (head_Head);
 // EXTERNAL MODULE: external "@material-ui/core/AppBar"
-var AppBar_ = __webpack_require__(17);
+var AppBar_ = __webpack_require__(18);
 var AppBar_default = /*#__PURE__*/__webpack_require__.n(AppBar_);
 
 // EXTERNAL MODULE: external "@material-ui/core/Toolbar"
-var Toolbar_ = __webpack_require__(18);
+var Toolbar_ = __webpack_require__(19);
 var Toolbar_default = /*#__PURE__*/__webpack_require__.n(Toolbar_);
 
 // CONCATENATED MODULE: ./components/nav.js
@@ -362,10 +366,6 @@ function Nav(props) {
 }
 
 /* harmony default export */ var nav = (Object(styles_["withStyles"])(styles)(Nav));
-// EXTERNAL MODULE: external "react-select"
-var external_react_select_ = __webpack_require__(19);
-var external_react_select_default = /*#__PURE__*/__webpack_require__.n(external_react_select_);
-
 // CONCATENATED MODULE: ./pages/index.js
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -415,7 +415,14 @@ var pages_styles = function styles(theme) {
   };
 };
 
-var options = [{
+var templateOptions = [{
+  value: 'default',
+  label: 'default'
+}, {
+  value: 'material',
+  label: 'material'
+}];
+var exampleOptions = [{
   value: 'basic-css',
   label: 'Basic css'
 }, {
@@ -454,15 +461,25 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Index)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
-      selectedOption: {
+      selectedTemplate: {
+        value: 'default',
+        label: 'default'
+      },
+      selectedExample: {
         value: 'basic-css',
         label: 'Basic css'
       }
     });
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleChange", function (selectedOption) {
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleChangeTemplate", function (selectedTemplate) {
       _this.setState({
-        selectedOption: selectedOption
+        selectedTemplate: selectedTemplate
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleChangeExample", function (selectedExample) {
+      _this.setState({
+        selectedExample: selectedExample
       });
     });
 
@@ -473,7 +490,9 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       var classes = this.props.classes;
-      var selectedOption = this.state.selectedOption;
+      var _this$state = this.state,
+          selectedTemplate = _this$state.selectedTemplate,
+          selectedExample = _this$state.selectedExample;
       return external_react_default.a.createElement("div", null, external_react_default.a.createElement(head, {
         title: "Create Next App",
         description: "create-next-app-cli is a command line interface (CLI) for easily creating Next.js apps in one command.",
@@ -629,9 +648,37 @@ function (_React$Component) {
       }, external_react_default.a.createElement(Typography_default.a, {
         variant: "body1",
         gutterBottom: true
-      }, "Create a new Next.js app with `default` and `material` UI:"), external_react_default.a.createElement("pre", null, external_react_default.a.createElement("code", {
+      }, "Create a new Next.js app with ", external_react_default.a.createElement("code", null, "default"), " or ", external_react_default.a.createElement("code", null, "material"), " templates."), external_react_default.a.createElement(Grid_default.a, {
+        container: true,
+        spacing: 24
+      }, external_react_default.a.createElement(Grid_default.a, {
+        item: true,
+        lg: 3,
+        xl: 3,
+        xs: 12
+      }, external_react_default.a.createElement("label", null, external_react_default.a.createElement(Typography_default.a, {
+        variant: "body1"
+      }, "Choose a template:")))), external_react_default.a.createElement("div", {
+        id: "templates"
+      }, external_react_default.a.createElement(Grid_default.a, {
+        container: true,
+        spacing: 24
+      }, external_react_default.a.createElement(Grid_default.a, {
+        item: true,
+        lg: 4,
+        xl: 4,
+        xs: 12
+      }, external_react_default.a.createElement(external_react_select_default.a, {
+        value: selectedTemplate,
+        onChange: this.handleChangeTemplate,
+        options: templateOptions
+      })))), external_react_default.a.createElement(Typography_default.a, {
+        variant: "body1",
+        gutterBottom: true,
+        className: "section"
+      }, "And run command below:"), external_react_default.a.createElement("pre", null, external_react_default.a.createElement("code", {
         className: "language-javascript"
-      }, "create-next-app my-app --template default")), external_react_default.a.createElement(Typography_default.a, {
+      }, "create-next-app my-app --template ".concat(selectedTemplate.value))), external_react_default.a.createElement(Typography_default.a, {
         variant: "body1",
         gutterBottom: true
       }, "It will create a directory called my-app inside the current folder. Inside that directory, it will generate the initial project structure and install the transitive dependencies:"), external_react_default.a.createElement("pre", null, external_react_default.a.createElement("code", {
@@ -769,16 +816,16 @@ function (_React$Component) {
         xl: 4,
         xs: 12
       }, external_react_default.a.createElement(external_react_select_default.a, {
-        value: selectedOption,
-        onChange: this.handleChange,
-        options: options
+        value: selectedExample,
+        onChange: this.handleChangeExample,
+        options: exampleOptions
       })))), external_react_default.a.createElement(Typography_default.a, {
         variant: "body1",
         gutterBottom: true,
         className: "section"
       }, "And run command below to bootstrap your app:"), external_react_default.a.createElement("pre", null, external_react_default.a.createElement("code", {
         className: "language-javascript"
-      }, "create-next-app my-app --example ".concat(selectedOption.value))))), external_react_default.a.createElement(Grid_default.a, {
+      }, "create-next-app my-app --example ".concat(selectedExample.value))))), external_react_default.a.createElement(Grid_default.a, {
         container: true,
         item: true,
         spacing: 0,

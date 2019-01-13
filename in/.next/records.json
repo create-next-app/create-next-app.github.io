@@ -3,8 +3,8 @@
     "byIdentifier": {
       "node_modules/react/index.js": 0,
       "node_modules/next/node_modules/@babel/runtime/helpers/interopRequireDefault.js": 1,
-      "node_modules/@material-ui/core/Typography/index.js": 2,
-      "node_modules/@material-ui/core/Grid/index.js": 3,
+      "node_modules/@material-ui/core/Grid/index.js": 2,
+      "node_modules/@material-ui/core/Typography/index.js": 3,
       "node_modules/next/node_modules/prop-types/index.js": 4,
       "node_modules/core-js/library/modules/_core.js": 5,
       "node_modules/next/node_modules/@babel/runtime/helpers/extends.js": 6,
@@ -457,7 +457,7 @@
       "node_modules/next/error.js": 453,
       "node_modules/next/dist/lib/error.js": 454,
       "node_modules/http-status/lib/index.js": 455,
-      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/index.js fbe575324aad39bc44687b4210ea66e1": 456,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/index.js a97d49085092ec5e61a31ecf73bcbeee": 456,
       "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/_app.js 09d1e1d4953cc11928f8a7edaf4014ba": 457
     },
     "usedIds": {
@@ -926,21 +926,18 @@
       "commons": 0,
       "static/runtime/webpack.js": 1,
       "static/runtime/main.js": 2,
-      "static/wA8fC7LQN6ZxP4d1kKQ4S/pages/_app.js": 3,
-      "static/wA8fC7LQN6ZxP4d1kKQ4S/pages/index.js": 4,
-      "static/wA8fC7LQN6ZxP4d1kKQ4S/pages/_error.js": 5,
-      "static/Z4NSLqH3gowP3BAET5q2o/pages/_app.js": 6,
-      "static/Z4NSLqH3gowP3BAET5q2o/pages/index.js": 7,
-      "static/Z4NSLqH3gowP3BAET5q2o/pages/_error.js": 8
+      "static/6yzIC~zoQIPmik9rKK5ZG/pages/_app.js": 3,
+      "static/6yzIC~zoQIPmik9rKK5ZG/pages/index.js": 4,
+      "static/6yzIC~zoQIPmik9rKK5ZG/pages/_error.js": 5
     },
     "bySource": {},
     "usedIds": [
       0,
       1,
       2,
-      6,
-      7,
-      8
+      3,
+      4,
+      5
     ]
   }
 }

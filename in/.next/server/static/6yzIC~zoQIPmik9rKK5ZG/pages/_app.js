@@ -134,25 +134,25 @@ module.exports = require("@material-ui/core/colors/green");
 module.exports = require("next/app");
 
 /***/ }),
-/* 12 */
+/* 12 */,
+/* 13 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/CssBaseline");
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-jss/lib/JssProvider");
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports) {
 
 module.exports = require("jss");
 
 /***/ }),
-/* 15 */,
 /* 16 */,
 /* 17 */,
 /* 18 */,
@@ -193,15 +193,15 @@ var head_default = /*#__PURE__*/__webpack_require__.n(head_);
 var styles_ = __webpack_require__(3);
 
 // EXTERNAL MODULE: external "@material-ui/core/CssBaseline"
-var CssBaseline_ = __webpack_require__(12);
+var CssBaseline_ = __webpack_require__(13);
 var CssBaseline_default = /*#__PURE__*/__webpack_require__.n(CssBaseline_);
 
 // EXTERNAL MODULE: external "react-jss/lib/JssProvider"
-var JssProvider_ = __webpack_require__(13);
+var JssProvider_ = __webpack_require__(14);
 var JssProvider_default = /*#__PURE__*/__webpack_require__.n(JssProvider_);
 
 // EXTERNAL MODULE: external "jss"
-var external_jss_ = __webpack_require__(14);
+var external_jss_ = __webpack_require__(15);
 
 // EXTERNAL MODULE: external "@material-ui/core/colors/purple"
 var purple_ = __webpack_require__(8);
