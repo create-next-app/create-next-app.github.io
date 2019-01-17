@@ -33,11 +33,18 @@ const templateOptions = [
 
 const exampleOptions = [
   { value: 'basic-css', label: 'Basic css' },
+  { value: 'with-typescript', label: 'TypeScript' },
+  { value: 'with-next-css', label: 'Next css' },
+  { value: 'with-next-sass', label: 'Next sass' },
+  { value: 'with-next-less', label: 'Next less' },
+  { value: 'with-next-routes', label: 'Next routes' },
   { value: 'with-redux', label: 'Redux' },
   { value: 'with-redux-wrapper', label: 'Redux wrapper' },
   { value: 'with-redux-saga', label: 'Redux saga' },
   { value: 'with-apollo-and-redux', label: 'Apollo and redux' },
-  { value: 'with-apollo-and-redux-saga', label: 'Apollo and redux saga' }
+  { value: 'with-apollo-and-redux-saga', label: 'Apollo and redux saga' },
+  { value: 'with-relay-modern', label: 'Replay modern' },
+  { value: 'with-relay-modern-server-express', label: 'Replay modern and express server' }
 ];
 
 class Index extends React.Component {

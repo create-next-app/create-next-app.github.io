@@ -65,10 +65,10 @@
   },
   "chunks": {
     "byName": {
-      "static/6yzIC~zoQIPmik9rKK5ZG/pages/_app.js": 0,
-      "static/6yzIC~zoQIPmik9rKK5ZG/pages/_document.js": 1,
-      "static/6yzIC~zoQIPmik9rKK5ZG/pages/index.js": 2,
-      "static/6yzIC~zoQIPmik9rKK5ZG/pages/_error.js": 3
+      "static/H~A3pvgCnMaY5MFnkXN2T/pages/_app.js": 0,
+      "static/H~A3pvgCnMaY5MFnkXN2T/pages/_document.js": 1,
+      "static/H~A3pvgCnMaY5MFnkXN2T/pages/index.js": 2,
+      "static/H~A3pvgCnMaY5MFnkXN2T/pages/_error.js": 3
     },
     "bySource": {},
     "usedIds": [

@@ -426,6 +426,21 @@ var exampleOptions = [{
   value: 'basic-css',
   label: 'Basic css'
 }, {
+  value: 'with-typescript',
+  label: 'TypeScript'
+}, {
+  value: 'with-next-css',
+  label: 'Next css'
+}, {
+  value: 'with-next-sass',
+  label: 'Next sass'
+}, {
+  value: 'with-next-less',
+  label: 'Next less'
+}, {
+  value: 'with-next-routes',
+  label: 'Next routes'
+}, {
   value: 'with-redux',
   label: 'Redux'
 }, {
@@ -440,6 +455,12 @@ var exampleOptions = [{
 }, {
   value: 'with-apollo-and-redux-saga',
   label: 'Apollo and redux saga'
+}, {
+  value: 'with-relay-modern',
+  label: 'Replay modern'
+}, {
+  value: 'with-relay-modern-server-express',
+  label: 'Replay modern and express server'
 }];
 
 var pages_Index =
