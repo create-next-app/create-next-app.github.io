@@ -28,7 +28,8 @@ const styles = theme => ({
 
 const templateOptions = [
   { value: 'default', label: 'default' },
-  { value: 'material', label: 'material' }
+  { value: 'material', label: 'material' },
+  { value: 'semantic', label: 'semantic' }
 ];
 
 const exampleOptions = [

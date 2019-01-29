@@ -115,7 +115,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jss_lib_JssProvider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-jss/lib/JssProvider */ "react-jss/lib/JssProvider");
 /* harmony import */ var react_jss_lib_JssProvider__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jss_lib_JssProvider__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _src_getPageContext__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../src/getPageContext */ "./src/getPageContext.js");
-var _jsxFileName = "/home/bunlong/workspace/os/Bunlong/create-next-app.github.io/in/pages/_app.js";
+var _jsxFileName = "/home/bunlong/workspace/os/create-next-app.github.io/in/pages/_app.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 

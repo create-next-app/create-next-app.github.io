@@ -421,6 +421,9 @@ var templateOptions = [{
 }, {
   value: 'material',
   label: 'material'
+}, {
+  value: 'semantic',
+  label: 'semantic'
 }];
 var exampleOptions = [{
   value: 'basic-css',
