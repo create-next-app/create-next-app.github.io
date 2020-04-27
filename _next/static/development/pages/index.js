@@ -266,6 +266,9 @@ function Nav(props) {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2___default.a, {
     position: "static",
+    style: {
+      background: '#000'
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
@@ -34852,7 +34855,6 @@ var styles = function styles(theme) {
     },
     button: {
       margin: theme.spacing.unit,
-      backgroundColor: '#dc3545',
       color: '#fff',
       marginTop: 20
     }
@@ -34865,6 +34867,9 @@ var templateOptions = [{
 }, {
   value: 'material',
   label: 'material'
+}, {
+  value: 'bootstrap',
+  label: 'bootstrap'
 }, {
   value: 'semantic',
   label: 'semantic'
@@ -34969,7 +34974,7 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_head__WEBPACK_IMPORTED_MODULE_9__["default"], {
         title: "Create Next App",
-        description: "Create Next App is a command line interface for easily creating a Next.js app by running one command with no build configuration.",
+        description: "Create Next App allows you to create a Next.js app by running one command.",
         keywords: "next, nextjs, react, reactjs, create-next-app, create-next-app-cli, create-react-app, server-side-rendering, zero-configuration, build-tools, boilerplate",
         __source: {
           fileName: _jsxFileName,
@@ -35011,7 +35016,7 @@ function (_React$Component) {
           lineNumber: 83
         },
         __self: this
-      }, "Create ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, "Set up a ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://github.com/zeit/next.js",
         target: "_blank",
         __source: {
@@ -35019,7 +35024,7 @@ function (_React$Component) {
           lineNumber: 84
         },
         __self: this
-      }, "Next.js"), " App building tools"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      }, "Next.js"), " app by running one command."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_6___default.a, {
         href: 'https://github.com/Bunlong/create-next-app',
         variant: "contained",
         color: "secondary",
@@ -35126,23 +35131,7 @@ function (_React$Component) {
           lineNumber: 107
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "https://nextjs.org",
-        target: "_blank",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 108
-        },
-        __self: this
-      }, "Next.js"), " is a very popular ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "https://nodejs.org/en/about/",
-        target: "_blank",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 108
-        },
-        __self: this
-      }, "Node.js"), " framework which enables an easy server-side React rendering, and provides many other amazing features."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      }, "Next.js is a framework for building server side rendering applications."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
         container: true,
         item: true,
         spacing: 0,
@@ -35204,7 +35193,7 @@ function (_React$Component) {
           lineNumber: 122
         },
         __self: this
-      }, "Create Next App is a command line interface (create-next-app + CLI) for easily creating a Next.js app by running one command with no build configuration. It come with default, material, bootstrap and semantic templates and Next.js examples."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      }, "Create Next App is a CLI tool allows you to quickly create & run React applications with no build configuration. It come with default, material, bootstrap and semantic templates and Next.js examples."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
         container: true,
         item: true,
         spacing: 0,
@@ -35266,7 +35255,13 @@ function (_React$Component) {
           lineNumber: 137
         },
         __self: this
-      }, "To use create-next-app command line interface you have to install ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
+      }, "To use ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 138
+        },
+        __self: this
+      }, "create-next-app"), " command line interface you have to install ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 138
@@ -35280,7 +35275,13 @@ function (_React$Component) {
           lineNumber: 140
         },
         __self: this
-      }, "create-next-app-cli is available on npm. It can be installed with the following command:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 141
+        },
+        __self: this
+      }, "create-next-app-cli"), " is available on npm. It can be installed with the following command:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 143
@@ -35301,7 +35302,13 @@ function (_React$Component) {
           lineNumber: 148
         },
         __self: this
-      }, "create-next-app-cli is available on yarn as well. It can be installed with the following command:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 149
+        },
+        __self: this
+      }, "create-next-app-cli"), " is available on yarn as well. It can be installed with the following command:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 151
@@ -35314,7 +35321,7 @@ function (_React$Component) {
           lineNumber: 152
         },
         __self: this
-      }, "yarn add create-next-app-cli")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      }, "yarn global add create-next-app-cli")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
         variant: "body1",
         gutterBottom: true,
         __source: {
@@ -35333,6 +35340,7 @@ function (_React$Component) {
         item: true,
         spacing: 0,
         justify: "center",
+        id: "templates",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 161
@@ -35356,7 +35364,7 @@ function (_React$Component) {
           lineNumber: 163
         },
         __self: this
-      }, "Create a Next App"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
+      }, "Create a Next App in seconds"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 166
@@ -35390,7 +35398,13 @@ function (_React$Component) {
           lineNumber: 171
         },
         __self: this
-      }, "Create a new Next.js app with ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
+      }, "To create a new Next.js app called ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 172
+        },
+        __self: this
+      }, "my-app"), " with ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 172
@@ -35408,7 +35422,13 @@ function (_React$Component) {
           lineNumber: 172
         },
         __self: this
-      }, "bootstrap"), " or semantic templates."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      }, "bootstrap"), " or ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 172
+        },
+        __self: this
+      }, "semantic"), " templates, run this command:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default.a, {
         container: true,
         spacing: 24,
         __source: {
@@ -35440,7 +35460,6 @@ function (_React$Component) {
         },
         __self: this
       }, "Choose a template:")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        id: "templates",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 183
@@ -35524,7 +35543,7 @@ function (_React$Component) {
           lineNumber: 223
         },
         __self: this
-      }, "No configuration or complicated folder structures, just the files you need to build your app. When the installation is done, you can open your project folder:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", {
+      }, "No configuration or complicated folder structures, just the files you need to build your app. When the installation is done, you can open your project folder, run this command:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 226
@@ -35836,6 +35855,7 @@ function (_React$Component) {
         item: true,
         spacing: 0,
         justify: "center",
+        id: "examples",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 284
@@ -35925,7 +35945,6 @@ function (_React$Component) {
         },
         __self: this
       }, "Choose an example:")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        id: "examples",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 306
@@ -35967,7 +35986,13 @@ function (_React$Component) {
           lineNumber: 317
         },
         __self: this
-      }, "And run command below to bootstrap your app:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", {
+      }, "And run command below to bootstrap your app called ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 318
+        },
+        __self: this
+      }, "my-app"), ":"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 320
